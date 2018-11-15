@@ -1,7 +1,0 @@
-C:\Users\zhendong\source\repos\WD\WD\bin\WD.dll.config
-C:\Users\zhendong\source\repos\WD\WD\bin\WD.dll
-C:\Users\zhendong\source\repos\WD\WD\bin\WD.pdb
-C:\Users\zhendong\source\repos\WD\WD\obj\Debug\WD.csprojAssemblyReference.cache
-C:\Users\zhendong\source\repos\WD\WD\obj\Debug\WD.csproj.CoreCompileInputs.cache
-C:\Users\zhendong\source\repos\WD\WD\obj\Debug\WD.dll
-C:\Users\zhendong\source\repos\WD\WD\obj\Debug\WD.pdb

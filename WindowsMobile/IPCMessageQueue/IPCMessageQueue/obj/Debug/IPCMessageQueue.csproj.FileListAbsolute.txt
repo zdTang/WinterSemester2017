@@ -1,0 +1,14 @@
+D:\CONESTOGA\OneDrive\2018_FALL\Win32MobileProgramming\slides\IPC-Demos-2018\06-IPCMessageQueue\IPCMessageQueue\bin\Debug\IPCMessageQueue.exe.config
+D:\CONESTOGA\OneDrive\2018_FALL\Win32MobileProgramming\slides\IPC-Demos-2018\06-IPCMessageQueue\IPCMessageQueue\bin\Debug\IPCMessageQueue.exe
+D:\CONESTOGA\OneDrive\2018_FALL\Win32MobileProgramming\slides\IPC-Demos-2018\06-IPCMessageQueue\IPCMessageQueue\bin\Debug\IPCMessageQueue.pdb
+D:\CONESTOGA\OneDrive\2018_FALL\Win32MobileProgramming\slides\IPC-Demos-2018\06-IPCMessageQueue\IPCMessageQueue\obj\Debug\IPCMessageQueue.csprojAssemblyReference.cache
+D:\CONESTOGA\OneDrive\2018_FALL\Win32MobileProgramming\slides\IPC-Demos-2018\06-IPCMessageQueue\IPCMessageQueue\obj\Debug\IPCMessageQueue.csproj.CoreCompileInputs.cache
+D:\CONESTOGA\OneDrive\2018_FALL\Win32MobileProgramming\slides\IPC-Demos-2018\06-IPCMessageQueue\IPCMessageQueue\obj\Debug\IPCMessageQueue.exe
+D:\CONESTOGA\OneDrive\2018_FALL\Win32MobileProgramming\slides\IPC-Demos-2018\06-IPCMessageQueue\IPCMessageQueue\obj\Debug\IPCMessageQueue.pdb
+E:\Conestoga\OneDrive\2018_FALL\Win32MobileProgramming\slides\IPC-Demos-2018\06-IPCMessageQueue\IPCMessageQueue\bin\Debug\IPCMessageQueue.exe.config
+E:\Conestoga\OneDrive\2018_FALL\Win32MobileProgramming\slides\IPC-Demos-2018\06-IPCMessageQueue\IPCMessageQueue\bin\Debug\IPCMessageQueue.exe
+E:\Conestoga\OneDrive\2018_FALL\Win32MobileProgramming\slides\IPC-Demos-2018\06-IPCMessageQueue\IPCMessageQueue\bin\Debug\IPCMessageQueue.pdb
+E:\Conestoga\OneDrive\2018_FALL\Win32MobileProgramming\slides\IPC-Demos-2018\06-IPCMessageQueue\IPCMessageQueue\obj\Debug\IPCMessageQueue.csprojAssemblyReference.cache
+E:\Conestoga\OneDrive\2018_FALL\Win32MobileProgramming\slides\IPC-Demos-2018\06-IPCMessageQueue\IPCMessageQueue\obj\Debug\IPCMessageQueue.csproj.CoreCompileInputs.cache
+E:\Conestoga\OneDrive\2018_FALL\Win32MobileProgramming\slides\IPC-Demos-2018\06-IPCMessageQueue\IPCMessageQueue\obj\Debug\IPCMessageQueue.exe
+E:\Conestoga\OneDrive\2018_FALL\Win32MobileProgramming\slides\IPC-Demos-2018\06-IPCMessageQueue\IPCMessageQueue\obj\Debug\IPCMessageQueue.pdb
