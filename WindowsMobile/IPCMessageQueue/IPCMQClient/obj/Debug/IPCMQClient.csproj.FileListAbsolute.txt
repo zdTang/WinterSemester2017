@@ -12,3 +12,10 @@ E:\Conestoga\OneDrive\2018_FALL\Win32MobileProgramming\slides\IPC-Demos-2018\06-
 E:\Conestoga\OneDrive\2018_FALL\Win32MobileProgramming\slides\IPC-Demos-2018\06-IPCMessageQueue\IPCMQClient\obj\Debug\IPCMQClient.csproj.CoreCompileInputs.cache
 E:\Conestoga\OneDrive\2018_FALL\Win32MobileProgramming\slides\IPC-Demos-2018\06-IPCMessageQueue\IPCMQClient\obj\Debug\IPCMQClient.exe
 E:\Conestoga\OneDrive\2018_FALL\Win32MobileProgramming\slides\IPC-Demos-2018\06-IPCMessageQueue\IPCMQClient\obj\Debug\IPCMQClient.pdb
+D:\CONESTOGA\OneDrive\2018_FALL\CODES\WinterSemester2017\WindowsMobile\IPCMessageQueue\IPCMQClient\bin\Debug\IPCMQClient.exe.config
+D:\CONESTOGA\OneDrive\2018_FALL\CODES\WinterSemester2017\WindowsMobile\IPCMessageQueue\IPCMQClient\bin\Debug\IPCMQClient.exe
+D:\CONESTOGA\OneDrive\2018_FALL\CODES\WinterSemester2017\WindowsMobile\IPCMessageQueue\IPCMQClient\bin\Debug\IPCMQClient.pdb
+D:\CONESTOGA\OneDrive\2018_FALL\CODES\WinterSemester2017\WindowsMobile\IPCMessageQueue\IPCMQClient\obj\Debug\IPCMQClient.csprojAssemblyReference.cache
+D:\CONESTOGA\OneDrive\2018_FALL\CODES\WinterSemester2017\WindowsMobile\IPCMessageQueue\IPCMQClient\obj\Debug\IPCMQClient.csproj.CoreCompileInputs.cache
+D:\CONESTOGA\OneDrive\2018_FALL\CODES\WinterSemester2017\WindowsMobile\IPCMessageQueue\IPCMQClient\obj\Debug\IPCMQClient.exe
+D:\CONESTOGA\OneDrive\2018_FALL\CODES\WinterSemester2017\WindowsMobile\IPCMessageQueue\IPCMQClient\obj\Debug\IPCMQClient.pdb
