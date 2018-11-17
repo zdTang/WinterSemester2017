@@ -41,10 +41,12 @@ namespace IPCMessageQueue
                     //string message = (string)mq.Receive(new TimeSpan(0, 0, 1)).Body;
                     //if (message != null)
                     //{
-                        //Console.WriteLine(message);
-                       // Console.WriteLine("new message");
-                       // Console.ReadKey();
-                        if (message == "Shutdown")
+                    //Console.WriteLine(message);
+                    // Console.WriteLine("new message");
+                    // Console.ReadKey();
+                    int index = message.IndexOf("@", 0);
+
+                    if (message.Substring(index+1) == "Shutdown")
                         {
 
                             finished = true;

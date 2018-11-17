@@ -56,6 +56,8 @@ namespace IPCMQClient
 
             }
 
+            Console.WriteLine("The server is quit.");
+
         }
 
 
