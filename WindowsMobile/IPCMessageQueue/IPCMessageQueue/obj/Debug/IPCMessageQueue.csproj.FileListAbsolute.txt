@@ -19,3 +19,10 @@ D:\CONESTOGA\OneDrive\2018_FALL\CODES\WinterSemester2017\WindowsMobile\IPCMessag
 D:\CONESTOGA\OneDrive\2018_FALL\CODES\WinterSemester2017\WindowsMobile\IPCMessageQueue\IPCMessageQueue\obj\Debug\IPCMessageQueue.csproj.CoreCompileInputs.cache
 D:\CONESTOGA\OneDrive\2018_FALL\CODES\WinterSemester2017\WindowsMobile\IPCMessageQueue\IPCMessageQueue\obj\Debug\IPCMessageQueue.exe
 D:\CONESTOGA\OneDrive\2018_FALL\CODES\WinterSemester2017\WindowsMobile\IPCMessageQueue\IPCMessageQueue\obj\Debug\IPCMessageQueue.pdb
+C:\Users\Shuang Liang\Desktop\IPC assign\WindowsMobile\IPCMessageQueue\IPCMessageQueue\bin\Debug\IPCMessageQueue.exe.config
+C:\Users\Shuang Liang\Desktop\IPC assign\WindowsMobile\IPCMessageQueue\IPCMessageQueue\bin\Debug\IPCMessageQueue.exe
+C:\Users\Shuang Liang\Desktop\IPC assign\WindowsMobile\IPCMessageQueue\IPCMessageQueue\bin\Debug\IPCMessageQueue.pdb
+C:\Users\Shuang Liang\Desktop\IPC assign\WindowsMobile\IPCMessageQueue\IPCMessageQueue\obj\Debug\IPCMessageQueue.csprojAssemblyReference.cache
+C:\Users\Shuang Liang\Desktop\IPC assign\WindowsMobile\IPCMessageQueue\IPCMessageQueue\obj\Debug\IPCMessageQueue.csproj.CoreCompileInputs.cache
+C:\Users\Shuang Liang\Desktop\IPC assign\WindowsMobile\IPCMessageQueue\IPCMessageQueue\obj\Debug\IPCMessageQueue.exe
+C:\Users\Shuang Liang\Desktop\IPC assign\WindowsMobile\IPCMessageQueue\IPCMessageQueue\obj\Debug\IPCMessageQueue.pdb

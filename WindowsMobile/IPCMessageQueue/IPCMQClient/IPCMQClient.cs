@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,13 +10,13 @@ namespace IPCMQClient
 {
     public class IPCMQClient
     {
-        string mQueueName = @".\private$\ipcTest";
+       private static string mQueueName = @".\private$\ipcTest";
         public  MessageQueue mq;
 
         
         public IPCMQClient()
         {
-            if (!MessageQueue.Exists(mQueueName))
+            while (!MessageQueue.Exists(mQueueName))
             {
 
                 // No queue exit, complain and quit.
@@ -24,12 +24,12 @@ namespace IPCMQClient
                 Client.isExist = false;
                
             }
-            else
-            {
+            
+           
                 // find the Queue, then make a reference to use the Queue
                 Console.WriteLine("find server!");
                 mq = new MessageQueue(mQueueName);
-            }
+            
 
 
         }

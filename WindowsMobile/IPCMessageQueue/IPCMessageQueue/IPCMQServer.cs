@@ -10,12 +10,13 @@ namespace IPCMessageQueue
     class IPCMQServer
     {
         // ipcTest is the name of the QUEUE
-        string mQueueName = @".\private$\ipcTest";
+     private static string mQueueName = @".\private$\ipcTest";
         MessageQueue mq;
         
         public IPCMQServer()
         {
             Console.WriteLine("Server is starting......!");
+
             if (!MessageQueue.Exists(mQueueName))
             {
                 mq = MessageQueue.Create(mQueueName);  // create a new Queue
@@ -30,6 +31,34 @@ namespace IPCMessageQueue
 
             Console.WriteLine("Waiting for client......");
         }
+
+        public static void CloseQueue()
+        {
+            // Determine whether the queue exists.
+            if (MessageQueue.Exists(mQueueName))
+            {
+                try
+                {
+                    // Delete the queue.
+                    MessageQueue.Delete(mQueueName);
+                }
+                catch (MessageQueueException e)
+                {
+                    if (e.MessageQueueErrorCode ==
+                        MessageQueueErrorCode.AccessDenied)
+                    {
+                        Console.WriteLine("Opreation Failed: " +
+                            e.Message);
+                    }
+
+                    // Handle other sources of MessageQueueException.
+                }
+
+            }
+
+            
+        }
+           
 
         public void GetMessages()
         {
@@ -64,8 +93,11 @@ namespace IPCMessageQueue
            
             mq.Close();
 
-            MessageQueue.Delete(mQueueName);
-            Console.WriteLine("Server is shutting down! ");
+            //MessageQueue.Delete(mQueueName);
+
+            IPCMQServer.CloseQueue();
+
+            Console.WriteLine("Queue shut down! ");
 
         }
     }
