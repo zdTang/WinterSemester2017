@@ -2,20 +2,27 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Messaging;
 using System.Text;
+using System.Threading;
 
 namespace IPCMQClient
 {
-    class Program
+    class Client
     {
         static void Main(string[] args)
         {
             IPCMQClient mqClient = new IPCMQClient();
             bool finished = false;
+            Thread readQueue = new Thread(mqClient.ReadFromQueueu);
+            readQueue.IsBackground = true;
+            readQueue.Start();
+            //readQueue.Start();
+
 
             do
             {
-                Console.Write("Enter a new message (or blank line to exit): ");
+                //Console.Write("Enter a new message (or blank line to exit): ");
                 string message = Console.ReadLine();
                 int pid = Process.GetCurrentProcess().Id;
                 message = Convert.ToString(pid) + "@" + message;
@@ -37,5 +44,24 @@ namespace IPCMQClient
             Console.Write("Press any key to continue.");
             Console.ReadKey();
         }
+
+
+        //void ClientCheckQueue(object mQueueName)
+        //{
+        //    while(MessageQueue.Exists(mQueueName))
+        //    {
+
+        //        mqClient.ReadFromQueueu();
+
+
+
+        //    }
+
+
+
+        //}
+        
+
+
     }
 }
