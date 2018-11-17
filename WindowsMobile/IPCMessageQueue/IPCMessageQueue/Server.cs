@@ -12,7 +12,8 @@ namespace IPCMessageQueue
             IPCMQServer server = new IPCMQServer();
             server.GetMessages();
 
-            Console.WriteLine("Press Enter to end...");
+            Console.WriteLine("Press any key to quit the console.");
+            Console.ReadKey();
         }
     }
 }

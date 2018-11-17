@@ -15,14 +15,20 @@ namespace IPCMessageQueue
         
         public IPCMQServer()
         {
+            Console.WriteLine("Server is starting......!");
             if (!MessageQueue.Exists(mQueueName))
             {
                 mq = MessageQueue.Create(mQueueName);
+                Console.WriteLine("Create a new Queue!");
+
             }
             else
             {
                 mq = new MessageQueue(mQueueName);
+                Console.WriteLine("Find the old Queue!");
             }
+
+            Console.WriteLine("Waiting for client......");
         }
 
         public void GetMessages()
@@ -34,16 +40,9 @@ namespace IPCMessageQueue
             {
                 try
                 {
-                    //mq.MessageReadPropertyFilter.ClearAll();
-                    //Message emptyMessage = mq.Peek();
-                    //string message = (string)mq.Receive().Body;
+                    
                     string message = (string)mq.Peek().Body;
-                    //string message = (string)mq.Receive(new TimeSpan(0, 0, 1)).Body;
-                    //if (message != null)
-                    //{
-                    //Console.WriteLine(message);
-                    // Console.WriteLine("new message");
-                    // Console.ReadKey();
+                   
                     int index = message.IndexOf("@", 0);
 
                     if (message.Substring(index+1) == "Shutdown")
@@ -62,8 +61,11 @@ namespace IPCMessageQueue
                     Console.WriteLine("Exception: " + ex.Message);
                 }
             }
-
+           
             mq.Close();
+
+            MessageQueue.Delete(mQueueName);
+            Console.WriteLine("Server is shutting down! ");
 
         }
     }

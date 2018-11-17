@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\WindowsMobile",
+    "\\WindowsMobile\\IPCMessageQueue",
+    "\\WindowsMobile\\IPCMessageQueue\\IPCMessageQueue",
+    "\\WindowsMobile\\IPCMessageQueue\\IPCMQClient"
+  ],
+  "SelectedNode": "\\WindowsMobile\\IPCMessageQueue\\IPCMQClient",
+  "PreviewInSolutionExplorer": false
+}

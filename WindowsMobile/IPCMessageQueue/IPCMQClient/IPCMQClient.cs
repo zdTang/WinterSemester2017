@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Messaging;
 using System.Diagnostics;
+using System.Threading;
 
 namespace IPCMQClient
 {
@@ -12,27 +13,35 @@ namespace IPCMQClient
         string mQueueName = @".\private$\ipcTest";
         public  MessageQueue mq;
 
+        
         public IPCMQClient()
         {
             if (!MessageQueue.Exists(mQueueName))
             {
-                mq = MessageQueue.Create(mQueueName);
+                
+                Console.WriteLine("no server exist!");
+                Client.isExist = false;
+               
             }
             else
             {
+                Console.WriteLine("find server!");
                 mq = new MessageQueue(mQueueName);
             }
+
+
         }
 
-        public string WriteToQueue(string data)
+
+        public void WriteToQueue(string data)
         {
-            string result = "OK";
+            
 
             mq.Send(data);
 
             mq.Close();
 
-            return result;
+          
             
         }
         public void ReadFromQueueu()
@@ -52,11 +61,18 @@ namespace IPCMQClient
                     content = (string)mq.Receive().Body;
                     Console.WriteLine("[Client-{0}]:{1}",Convert.ToString(pidGet),content.Substring(index+1));
                 }
-                
+                Thread.Sleep(1000);
 
             }
 
-            Console.WriteLine("The server is quit.");
+
+            
+            Console.WriteLine("The server is quit...");
+            Thread.Sleep(1000);
+
+            Environment.Exit(0);
+
+
 
         }
 
