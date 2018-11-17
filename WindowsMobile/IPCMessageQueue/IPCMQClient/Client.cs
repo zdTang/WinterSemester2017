@@ -20,13 +20,14 @@ namespace IPCMQClient
 
             if(isExist)
             {
-               
+
+                // create a thread to check the Message in the Queue constantly
                 Thread readQueue = new Thread(mqClient.ReadFromQueueu);
                 readQueue.IsBackground = true;
                 readQueue.Start();
                 
 
-
+                // waiting for user's input 
                 while(true)
                 {
                     

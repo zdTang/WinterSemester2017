@@ -18,14 +18,14 @@ namespace IPCMessageQueue
             Console.WriteLine("Server is starting......!");
             if (!MessageQueue.Exists(mQueueName))
             {
-                mq = MessageQueue.Create(mQueueName);
+                mq = MessageQueue.Create(mQueueName);  // create a new Queue
                 Console.WriteLine("Create a new Queue!");
 
             }
             else
             {
                 mq = new MessageQueue(mQueueName);
-                Console.WriteLine("Find the old Queue!");
+                Console.WriteLine("Find the old Queue!");  // Use the old Queue
             }
 
             Console.WriteLine("Waiting for client......");
@@ -41,11 +41,11 @@ namespace IPCMessageQueue
                 try
                 {
                     
-                    string message = (string)mq.Peek().Body;
+                    string message = (string)mq.Peek().Body;  // peek each Message
                    
                     int index = message.IndexOf("@", 0);
 
-                    if (message.Substring(index+1) == "Shutdown")
+                    if (message.Substring(index+1) == "Shutdown") // Shutdown is received
                         {
 
                             finished = true;
