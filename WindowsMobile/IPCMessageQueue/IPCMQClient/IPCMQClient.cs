@@ -62,7 +62,7 @@ namespace IPCMQClient
                 string content;
                 string pidGet;
                 mq.Formatter = new XmlMessageFormatter(new Type[] { typeof(string) });
-                content = (string)mq.Peek().Body;  //  peek the Message
+                content = (string)mq.Peek().Body;  //  Peek the Message
                 
                 int index = content.IndexOf("@", 0); // find the index of "@"
                 pidGet = content.Substring(0, index); // get the PID of the Client
@@ -72,11 +72,12 @@ namespace IPCMQClient
                     Console.WriteLine("[Client-{0}]:{1}",Convert.ToString(pidGet),content.Substring(index+1));
                 }
 
-                //else
-                //{
-                //    content = (string)mq.Receive().Body;
-                //    Console.WriteLine("Me: {0}", content.Substring(index+1));
-                //}
+                //my own message
+                else
+                {
+                   
+                   Console.WriteLine("Me: {0}", content.Substring(index+1));
+                }
                 Thread.Sleep(1000);
 
             }

@@ -1,0 +1,18 @@
+﻿<Window x:Class="WPFMQClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFMQClient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="45" Margin="10,341,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="643"/>
+        <Button Content="Send" HorizontalAlignment="Left" Margin="670,340,0,0" VerticalAlignment="Top" Width="111" Height="46" Click="Button_Click"/>
+        <Border CornerRadius="10" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Chocolate" BorderThickness="3" Margin="10, 70, 20, 90">
+            <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="226" Width="742"/>
+
+        </Border>
+        <Label Content="Message Queue Chat System" HorizontalAlignment="Center" Margin="241,10,231.333,0" VerticalAlignment="Top" Height="42" Width="321" FontSize="23"/>
+    </Grid>
+</Window>

@@ -32,7 +32,7 @@ namespace IPCMQClient
                 {
                     //Console.Write("My Message: ");
                     string message = Console.ReadLine();
-                    Console.WriteLine("Me: {0}", message);
+                    //Console.WriteLine("Me: {0}", message);
                     int pid = Process.GetCurrentProcess().Id;
                     message = Convert.ToString(pid) + "@" + message;
 

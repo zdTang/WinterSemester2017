@@ -25,3 +25,4 @@ C:\Users\Shuang Liang\Desktop\IPC assign\WindowsMobile\IPCMessageQueue\IPCMessag
 C:\Users\Shuang Liang\Desktop\IPC assign\WindowsMobile\IPCMessageQueue\IPCMessageQueue\obj\Debug\IPCMessageQueue.csproj.CoreCompileInputs.cache
 C:\Users\Shuang Liang\Desktop\IPC assign\WindowsMobile\IPCMessageQueue\IPCMessageQueue\obj\Debug\IPCMessageQueue.exe
 C:\Users\Shuang Liang\Desktop\IPC assign\WindowsMobile\IPCMessageQueue\IPCMessageQueue\obj\Debug\IPCMessageQueue.pdb
+C:\Users\Shuang Liang\Desktop\IPC assign\WindowsMobile\IPCMessageQueue\IPCMessageQueue\obj\Debug\IPCMessageQueue.csprojAssemblyReference.cache
