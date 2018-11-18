@@ -75,7 +75,7 @@ namespace IPCMessageQueue
                           
                     int index = message.IndexOf("@", 0);
 
-                    if (message.Substring(index+1) == "Shutdown") // Shutdown is received
+                    if (message.Substring(index+1).ToUpper() == "SHUTDOWN") // Shutdown is received
                         {
 
                             finished = true;
