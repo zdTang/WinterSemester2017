@@ -51,7 +51,7 @@ namespace IPCMessageQueue
                             e.Message);
                     }
 
-                    // Handle other sources of MessageQueueException.
+                
                 }
 
             }
@@ -71,7 +71,8 @@ namespace IPCMessageQueue
                 {
                     
                     string message = (string)mq.Peek().Body;  // peek each Message
-                   
+
+                          
                     int index = message.IndexOf("@", 0);
 
                     if (message.Substring(index+1) == "Shutdown") // Shutdown is received
@@ -79,7 +80,7 @@ namespace IPCMessageQueue
 
                             finished = true;
                         }
-                    //}
+                    
                 }
                 catch (MessageQueueException mqex)
                 {

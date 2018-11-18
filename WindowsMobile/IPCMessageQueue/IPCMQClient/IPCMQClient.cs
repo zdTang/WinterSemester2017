@@ -14,22 +14,26 @@ namespace IPCMQClient
         public  MessageQueue mq;
 
         
+        //constructor
         public IPCMQClient()
         {
+
             while (!MessageQueue.Exists(mQueueName))
             {
 
                 // No queue exit, complain and quit.
-                Console.WriteLine("no server exist!");
-                Client.isExist = false;
-               
+                Console.WriteLine("Attempt to connect to queue...");
+                // Client.isExist = false;
+
+                Thread.Sleep(2000);
             }
-            
-           
-                // find the Queue, then make a reference to use the Queue
-                Console.WriteLine("find server!");
+
+
+            // find the Queue, then make a reference to use the Queue
+            Client.isExist = true;
+                
                 mq = new MessageQueue(mQueueName);
-            
+                Console.WriteLine("Queue Connected!");
 
 
         }
@@ -50,7 +54,7 @@ namespace IPCMQClient
         // Peek the Message in the Queue.
         // Once the Message is not send by the client.
         // This client will Receive this message
-        public void ReadFromQueueu()
+        public void ReadFromQueue()
         {
             int pid = Process.GetCurrentProcess().Id;
             while (MessageQueue.Exists(mQueueName))

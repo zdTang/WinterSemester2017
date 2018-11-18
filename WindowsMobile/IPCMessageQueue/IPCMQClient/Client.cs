@@ -11,7 +11,7 @@ namespace IPCMQClient
     
     public class Client
     {
-        public static bool isExist = true;
+        public static bool isExist = false;
         
         static void Main(string[] args)
         {
@@ -22,7 +22,7 @@ namespace IPCMQClient
             {
 
                 // create a thread to check the Message in the Queue constantly
-                Thread readQueue = new Thread(mqClient.ReadFromQueueu);
+                Thread readQueue = new Thread(mqClient.ReadFromQueue);
                 readQueue.IsBackground = true;
                 readQueue.Start();
                 
@@ -30,7 +30,7 @@ namespace IPCMQClient
                 // waiting for user's input 
                 while(true)
                 {
-                    
+                    //Console.Write("My Message: ");
                     string message = Console.ReadLine();
                     int pid = Process.GetCurrentProcess().Id;
                     message = Convert.ToString(pid) + "@" + message;
@@ -48,7 +48,7 @@ namespace IPCMQClient
                 Console.Write("Server doesn't exist");
                 Console.ReadKey();
             }
-            
+
         }
 
 
