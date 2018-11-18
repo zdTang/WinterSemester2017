@@ -71,6 +71,12 @@ namespace IPCMQClient
                     content = (string)mq.Receive().Body;
                     Console.WriteLine("[Client-{0}]:{1}",Convert.ToString(pidGet),content.Substring(index+1));
                 }
+
+                //else
+                //{
+                //    content = (string)mq.Receive().Body;
+                //    Console.WriteLine("Me: {0}", content.Substring(index+1));
+                //}
                 Thread.Sleep(1000);
 
             }
